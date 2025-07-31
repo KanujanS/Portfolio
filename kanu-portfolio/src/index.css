@@ -9,6 +9,51 @@ body {
   background: linear-gradient(to right, #0b192e, #060514);
 }
 
-
-
-
+.bg-grid-full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -10;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(to right, #8080800a 1px, transparent 1px),
+    linear-gradient(to bottom, #8080800a 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.gradient-text-fallback {
+  background: linear-gradient(to right, #38bdf8, #04ebd4, #0369a1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}
+.active-link {
+  background: linear-gradient(to right, #38bdf8, #04ebd4, #0369a1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}
+.link-hr{
+  display: none;
+}
+li .active-link + .link-hr {
+  display: block;
+  height: 2px;
+  border: none;
+  width: 100%;
+  background: linear-gradient(to right, #38bdf8, #04ebd4, #0369a1);
+  margin-top: 4px;
+}
+.gradient-text-heading {
+  background: linear-gradient(to right, #4986a9, #2386d6, #309ebc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}

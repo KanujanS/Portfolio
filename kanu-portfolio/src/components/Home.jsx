@@ -15,7 +15,7 @@ const Home = () => {
         deleteSpeed: 80,
     })
   return (
-    <div className='flex mt-20'>
+    <div className='flex mt-35' id='home'>
         <div>
             <p className='font-medium text-xl bg-gradient-to-r from-sky-400 via-sky-600 to-sky-800 bg-clip-text text-transparent'>I'm Kanujan Subakaran,</p>
             <p className='text-white font-bold text-7xl py-8' style={{ textShadow: '0px 0px 90px #0ea5e9' }}>Software <br /> <span className='bg-gradient-to-r from-sky-400 via-sky-600 to-sky-800 bg-clip-text text-transparent' >Engineer</span></p>
