@@ -4,7 +4,7 @@ import {Link} from 'react-scroll'
 
 const Navbar = () => {
   return (
-    <div className='fixed top-0 left-0 w-full z-50 bg-black/20 backdrop-blur-xl  px-30 py-5'>
+    <div className='fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-xl  px-30 py-5'>
       <div className='flex justify-between items-center'>
         <p className='font-bold text-2xl bg-gradient-to-r from-sky-400 via-sky-600 to-sky-700 bg-clip-text text-transparent cursor-pointer'>KanujanSK</p>
         <div >
