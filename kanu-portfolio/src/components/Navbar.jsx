@@ -10,19 +10,19 @@ const Navbar = () => {
         <div >
             <ul className='flex gap-10 text-white font-medium text-md'>
                 <li className=' cursor-pointer'>
-                  <Link to='home' smooth={true} duration={500} spy={true} activeClass="active-link">Home</Link>
+                  <Link to='home' smooth={true} duration={500} spy={true} offset={-350} activeClass="active-link">Home</Link>
                   <hr className='mt-1 border-none h-[1.5px] bg-white justify-center link-hr'/>
                 </li>
                 <li className=' cursor-pointer'>
-                  <Link to='about' smooth={true} duration={500} spy={true} activeClass="active-link">About</Link>
+                  <Link to='about' smooth={true} duration={500} spy={true} offset={-350} activeClass="active-link">About</Link>
                   <hr className='mt-1 border-none h-[1.5px] bg-white justify-center link-hr'/>
                 </li>
                 <li className=' cursor-pointer'>
-                  <Link to='projects' smooth={true} duration={500} spy={true} activeClass="active-link">Projects</Link>
+                  <Link to='projects' smooth={true} duration={500} spy={true} offset={-350} activeClass="active-link">Projects</Link>
                   <hr className='mt-1 border-none h-[1.5px] bg-white justify-center link-hr'/>
                 </li>
                 <li className='cursor-pointer'>
-                  <Link to='contact' smooth={true} duration={500} spy={true} activeClass="active-link">Contact</Link>
+                  <Link to='contact' smooth={true} duration={500} spy={true} offset={-350} activeClass="active-link">Contact</Link>
                   <hr className='mt-1 border-none h-[1.5px] bg-white justify-center link-hr'/>
                 </li>
             </ul>

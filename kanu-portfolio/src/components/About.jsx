@@ -9,13 +9,13 @@ import { TbWorldCode } from "react-icons/tb";
 
 const About = () => {
   return (
-    <div className='mt-30 text-center' id='about'>
+    <div className='min-h-screen text-center' id='about'>
         <p className='text-5xl font-bold gradient-text-fallback'>About Me</p>
         <div className='flex justify-center gap-10'>
             <div className='text-white text-start w-1/2'>
                 <p className='gradient-text-heading text-5xl font-bold mt-15'>Hello I'm,</p>
                 <p className='text-5xl font-bold my-5'>Kanujan Subakaran</p>
-                <p className='text-gray-400 text-lg text-justify'>Enthusiastic and dedicated aspiring Software Engineer with a solid understanding of full-stack development, particularly in the MERN stack <span className='font-medium text-gray-300'>(MongoDB, Express.js, React, Node.js)</span>. Passionate about building responsive web applications and continuously learning to stay updated with the latest software engineering practices.</p>
+                <p className='text-gray-400 text-lg text-justify'>Enthusiastic and dedicated aspiring Software Engineer with a solid understanding of full-stack development, particularly in the MERN stack <span className='font-medium text-gray-300'>(MongoDB, Express.js, React.js, Node.js)</span>. Passionate about building responsive web applications and continuously learning to stay updated with the latest software engineering practices.</p>
                 <div className='my-6 text-center'>
                     <a href="https://drive.google.com/file/d/1LYqnEw0iqlBnbpZ4jvX7YNjOF28nlDmW/view?usp=drive_link" target='_blank'>
                     <p className='flex items-center w-50 gap-2 border-[0.1px] border-gray-400/50 bg-gradient-to-r from-sky-500 via-sky-700 to-sky-800 hover:bg-gradient-to-r hover:from-sky-600 hover:via-sky-900 px-5 py-3 font-medium rounded-xl'><TbFileCv className='text-2xl'/> Download CV</p>
@@ -43,7 +43,7 @@ const About = () => {
             </div>
         </div>
         <div className='w-full flex flex-row gap-7 text-white my-8'>
-            <div className='w-full border-[0.1px] border-gray-400/50 p-5 bg-sky-800/30 rounded-2xl text-start space-y-4'>
+            <div className='w-full border-[0.1px] border-gray-400/50 p-5 pb-3 bg-sky-800/30 rounded-2xl text-start space-y-4'>
                 <div className='flex justify-between items-center'>
                     <div className='text-4xl border p-3 rounded-full inline-flex items-center justify-center'>
                         <BiExpandHorizontal />
@@ -53,10 +53,10 @@ const About = () => {
                 <p>TOTAL PROJECTS</p>
                 <div className='flex justify-between items-center'>
                     <p className='text-xs'>Innovative web solutions crafted</p>
-                    <FiArrowDownRight />
+                    <FiArrowDownRight className='text-2xl'/>
                 </div>
             </div>
-            <div className='w-full border-[0.1px] border-gray-400/50 p-5 bg-sky-800/30 rounded-2xl text-start space-y-4'>
+            <div className='w-full border-[0.1px] border-gray-400/50 p-5 pb-3 bg-sky-800/30 rounded-2xl text-start space-y-4'>
                 <div className='flex justify-between items-center'>
                     <div className='text-4xl border p-3 rounded-full inline-flex items-center justify-center'>
                         <LiaCertificateSolid />
@@ -66,10 +66,10 @@ const About = () => {
                 <p>CERTIFICATES</p>
                 <div className='flex justify-between'>
                     <p className='text-xs'>Professional skills validated</p>
-                    <FiArrowDownRight />
+                    <FiArrowDownRight className='text-2xl'/>
                 </div>
             </div>
-            <div className='w-full border-[0.1px] border-gray-400/50 p-5 bg-sky-800/30 rounded-2xl text-start space-y-4'>
+            <div className='w-full border-[0.1px] border-gray-400/50 p-5 pb-3 bg-sky-800/30 rounded-2xl text-start space-y-4'>
                 <div className='flex justify-between'>
                     <div className='text-4xl border p-3 rounded-full inline-flex items-center justify-center'>
                         <TbWorldCode />
@@ -79,7 +79,7 @@ const About = () => {
                 <p>YEARS OF EXPERIENCE</p>
                 <div className='flex justify-between'>
                     <p className='text-xs'>Continuous learning journey</p>
-                    <FiArrowDownRight />
+                    <FiArrowDownRight className='text-2xl'/>
                 </div>
             </div>
         </div>
