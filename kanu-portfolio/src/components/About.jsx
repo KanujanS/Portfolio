@@ -5,13 +5,22 @@ import { BiExpandHorizontal } from "react-icons/bi";
 import { FiArrowDownRight } from "react-icons/fi";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { TbWorldCode } from "react-icons/tb";
+import { BsStars } from "react-icons/bs";
 
 
 const About = () => {
   return (
-    <div className='min-h-screen text-center' id='about'>
-        <p className='text-5xl font-bold gradient-text-fallback'>About Me</p>
-        <div className='flex justify-center gap-10'>
+    <div className='text-center pt-30' id='about'>
+        <div className='flex flex-col items-center justify-center space-y-3'>
+            <p className='text-5xl font-bold gradient-text-fallback'>About Me</p>
+            <div className='flex gap-2'>
+                <BsStars className='text-2xl text-sky-500'/>
+                <p className='text-lg font-medium text-gray-400'>Transforming ideas into digital experiences</p>
+                <BsStars className='text-2xl text-sky-500'/>
+            </div>
+            
+        </div>
+        <div className='flex justify-center mt-5 gap-10'>
             <div className='text-white text-start w-1/2'>
                 <p className='gradient-text-heading text-5xl font-bold mt-15'>Hello I'm,</p>
                 <p className='text-5xl font-bold my-5'>Kanujan Subakaran</p>

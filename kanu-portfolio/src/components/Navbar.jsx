@@ -18,7 +18,7 @@ const Navbar = () => {
                   <hr className='mt-1 border-none h-[1.5px] bg-white justify-center link-hr'/>
                 </li>
                 <li className=' cursor-pointer'>
-                  <Link to='projects' smooth={true} duration={500} spy={true} offset={-350} activeClass="active-link">Projects</Link>
+                  <Link to='portfolio' smooth={true} duration={500} spy={true} offset={-350} activeClass="active-link">Portfolio</Link>
                   <hr className='mt-1 border-none h-[1.5px] bg-white justify-center link-hr'/>
                 </li>
                 <li className='cursor-pointer'>
