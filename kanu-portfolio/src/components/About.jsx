@@ -3,6 +3,8 @@ import { TbFileCv } from "react-icons/tb";
 import { IoIosArrowDropright } from "react-icons/io";
 import { BiExpandHorizontal } from "react-icons/bi";
 import { FiArrowDownRight } from "react-icons/fi";
+import { LiaCertificateSolid } from "react-icons/lia";
+import { TbWorldCode } from "react-icons/tb";
 
 
 const About = () => {
@@ -16,35 +18,37 @@ const About = () => {
                 <p className='text-gray-400 text-lg text-justify'>Enthusiastic and dedicated aspiring Software Engineer with a solid understanding of full-stack development, particularly in the MERN stack <span className='font-medium text-gray-300'>(MongoDB, Express.js, React, Node.js)</span>. Passionate about building responsive web applications and continuously learning to stay updated with the latest software engineering practices.</p>
                 <div className='my-6 text-center'>
                     <a href="https://drive.google.com/file/d/1LYqnEw0iqlBnbpZ4jvX7YNjOF28nlDmW/view?usp=drive_link" target='_blank'>
-                    <p className='flex items-center w-50 gap-2 border bg-gradient-to-r from-sky-500 via-sky-700 to-blue-950 hover:bg-gradient-to-r hover:from-sky-600 hover:via-sky-800 px-5 py-2 font-medium rounded-xl'><TbFileCv className='text-2xl'/> Download CV</p>
+                    <p className='flex items-center w-50 gap-2 border-[0.1px] border-gray-400/50 bg-gradient-to-r from-sky-500 via-sky-700 to-sky-800 hover:bg-gradient-to-r hover:from-sky-600 hover:via-sky-900 px-5 py-3 font-medium rounded-xl'><TbFileCv className='text-2xl'/> Download CV</p>
                     </a>
                 </div>
             </div>
-            <div className='w-1/2 text-white pl-8'>
-                <p className='gradient-text-heading mt-15 text-5xl font-semibold'>Education</p>
-                <div className='flex gap-2 text-start my-5 text-lg'>
+            <div className='w-1/2 text-start text-white pl-8'>
+                <p className='gradient-text-heading mt-15 text-5xl font-medium'>Education</p>
+                <div className='flex gap-2 my-5 text-lg'>
                     <IoIosArrowDropright className='text-2xl mt-[2px]'/>
                     <div className='space-y-3'>
                         <p>B.Sc (Hons) in Software Engineering</p>
-                        <p className='text-gray-400'>Aug 2022 – Present</p>
                         <p className='text-gray-400'>Faculty of Computing, Sabaragamuwa University of Sri Lanka</p>
+                        <p className='text-gray-400'>Aug 2022 – Present</p>
                     </div>
                 </div>
-                <div className='flex gap-2 text-start mt-8 text-lg'>
+                <div className='flex gap-2 mt-8 text-lg'>
                     <IoIosArrowDropright className='text-2xl mt-[2px]'/>
                     <div className='space-y-3'>
                         <p>G.C.E. Advanced Level ( Physical Science Stream )</p>
-                        <p className='text-gray-400'>2018 - 2020</p>
                         <p className='text-gray-400'>Kn/Kilinochchi Central College</p>
+                        <p className='text-gray-400'>2018 - 2020</p>
                     </div>
                 </div>
             </div>
         </div>
         <div className='w-full flex flex-row gap-7 text-white my-8'>
-            <div className='w-full h-50 border p-5 bg-sky-800/30 rounded-2xl text-start space-y-4'>
+            <div className='w-full border-[0.1px] border-gray-400/50 p-5 bg-sky-800/30 rounded-2xl text-start space-y-4'>
                 <div className='flex justify-between items-center'>
-                    <BiExpandHorizontal className='text-2xl border p-5 rounded-full inline-flex items-center justify-center overflow-visible'/>
-                    <p className='text-4xl font-medium'>5</p>
+                    <div className='text-4xl border p-3 rounded-full inline-flex items-center justify-center'>
+                        <BiExpandHorizontal />
+                    </div>
+                    <p className='text-4xl font-semibold'>5</p>
                 </div>
                 <p>TOTAL PROJECTS</p>
                 <div className='flex justify-between items-center'>
@@ -52,10 +56,12 @@ const About = () => {
                     <FiArrowDownRight />
                 </div>
             </div>
-            <div className='w-full h-50 border p-5 bg-sky-800/30 rounded-2xl text-start space-y-4'>
+            <div className='w-full border-[0.1px] border-gray-400/50 p-5 bg-sky-800/30 rounded-2xl text-start space-y-4'>
                 <div className='flex justify-between items-center'>
-                    <BiExpandHorizontal className='text-4xl border p-2 rounded-full'/>
-                    <p className='text-4xl font-medium'>3</p>
+                    <div className='text-4xl border p-3 rounded-full inline-flex items-center justify-center'>
+                        <LiaCertificateSolid />
+                    </div>
+                    <p className='text-4xl font-semibold'>3</p>
                 </div>
                 <p>CERTIFICATES</p>
                 <div className='flex justify-between'>
@@ -63,10 +69,12 @@ const About = () => {
                     <FiArrowDownRight />
                 </div>
             </div>
-            <div className='w-full h-50 border p-5 bg-sky-800/30 rounded-2xl text-start space-y-4'>
+            <div className='w-full border-[0.1px] border-gray-400/50 p-5 bg-sky-800/30 rounded-2xl text-start space-y-4'>
                 <div className='flex justify-between'>
-                    <BiExpandHorizontal className='text-4xl border p-2 rounded-full'/>
-                    <p className='text-4xl font-medium'>1</p>
+                    <div className='text-4xl border p-3 rounded-full inline-flex items-center justify-center'>
+                        <TbWorldCode />
+                    </div>
+                    <p className='text-4xl font-semibold'>1</p>
                 </div>
                 <p>YEARS OF EXPERIENCE</p>
                 <div className='flex justify-between'>
