@@ -11,7 +11,7 @@ const Portfolio = () => {
             <p className='text-md font-light text-gray-400 px-50'>Explore my journey through projects, certifications, and technical expertise. Each section represents a milestone in my continuous learning path.</p>
         </div>
         <div className='w-full border flex py-2 px-5 mt-10 text-white text-xl font-medium gap-5 rounded-2xl border-gray-400/30'>
-            <div className='w-full border border-gray-400/30 flex flex-col py-5 items-center justify-center rounded-xl bg-sky-400/20'>
+            <div className='w-full border border-gray-400/30 flex flex-col py-5 items-center justify-center rounded-xl gradient-box-bg'>
                 <IoIosCode className='text-3xl'/>
                 <p>Projects</p>
             </div>

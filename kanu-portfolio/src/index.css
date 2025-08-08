@@ -57,3 +57,6 @@ li .active-link + .link-hr {
   color: transparent;
   display: inline-block;
 }
+.gradient-box-bg{
+  background: linear-gradient(to right, #5498bfa7, #2385d69a, #093c4a9a);
+}
