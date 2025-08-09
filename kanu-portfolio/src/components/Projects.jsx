@@ -11,8 +11,10 @@ const Projects = () => {
   return (
     <div className='flex flex-col gap-5 px-5'>
         <div className='flex flex-row gap-5'>
-            <div className='w-1/2 border p-6 bg-gradient-to-b from-sky-950/50 to-teal-800/50 rounded-2xl'>
-                <img src={FoodDelivery} alt="Food Delivery website image" className='w-150 rounded-lg'/>
+            <div className='w-1/2 border-2 p-6 bg-gradient-to-b from-sky-950/50 to-teal-800/50 border-gray-400/30 rounded-2xl hover:border-2 hover:border-sky-400/40 group'>
+                <div className='overflow-hidden relative rounded-xl'>
+                   <img src={FoodDelivery} alt="Food Delivery website image" className='rounded-lg transform transition-transform duration-300 group-hover:scale-105'/>
+                </div>
                 <p className='text-2xl text-gray-200 py-3 font-medium'>Royal Food</p>
                 <p className='text-justify text-gray-300'>A responsive food delivery web app built with the MERN stack. Integrated Stripe for secure payments and developed an admin panel to manage menu items, track orders, and update order statuses in real-time.</p>
                 <div className='flex justify-between text-white pt-5'> 
@@ -25,10 +27,12 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-1/2 border p-6 bg-gradient-to-b from-sky-950/50 to-teal-800/50 rounded-2xl'>
-                <img src={MNS} alt="School management system website image" className='w-150 rounded-lg'/>
+            <div className='w-1/2 border-2 p-6 bg-gradient-to-b from-sky-950/50 to-teal-800/50 border-gray-400/30 rounded-2xl hover:border-2 hover:border-sky-400/40 group'>
+                <div className='overflow-hidden relative rounded-xl'>
+                    <img src={MNS} alt="School management system website image" className='w-150 rounded-lg transform transition-transform duration-300 group-hover:scale-105'/>
+                </div>
                 <p className='text-2xl text-gray-200 py-3 font-medium'>MNS</p>
-                <p className='text-justify text-gray-300'>A School Management System Developed for Mahiyangana National School using the MERN stack, JWT authentication, and Tailwind CSS. Features role based dashboards for Admins, Staff, and Students.</p>
+                <p className='text-justify text-gray-300'>A School Management System Developed for Mahiyangana National School using the MERN stack, JWT authentication, and Tailwind CSS. Features role based dashboards for Admins, Staff, and Students. Students can access their academic records.</p>
                 <div className='flex justify-between text-white pt-5'> 
                     <div className='flex items-center gap-2 cursor-pointer text-sky-500 hover:text-sky-300 font-medium'>
                         <button className='cursor-pointer'>Live Demo</button>
@@ -41,8 +45,10 @@ const Projects = () => {
             </div>
         </div>
         <div className='flex flex-row gap-5'>
-            <div className='w-1/2 border p-6 bg-gradient-to-b from-sky-950/50 to-teal-800/50 rounded-2xl'>
-                <img src={LMS} alt="Learning Management system website image" className='w-150 rounded-lg'/>
+            <div className='w-1/2 border-2 p-6 bg-gradient-to-b from-sky-950/50 to-teal-800/50 border-gray-400/30 rounded-2xl hover:border-2 hover:border-sky-400/40 group'>
+                <div className='overflow-hidden relative rounded-xl'>
+                    <img src={LMS} alt="Learning Management system website image" className='w-150 rounded-lg transform transition-transform duration-300 group-hover:scale-105'/>
+                </div>
                 <p className='text-2xl text-gray-200 py-3 font-medium'>Learn Gate</p>
                 <p className='text-justify text-gray-300'>An online course platform built with the MERN stack, Tailwind CSS, and Stripe for secure payments. Users can enroll in courses or register as educators. Includes dashboards for educators to manage courses and track earnings.</p>
                 <div className='flex justify-between text-white pt-5'> 
@@ -55,8 +61,10 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-1/2 border p-6 bg-gradient-to-b from-sky-950/50 to-teal-800/50 rounded-2xl'>
-                <img src={Ecommerce} alt="Ecommerce website image" className='w-150 rounded-lg'/>
+            <div className='w-1/2 border-2 p-6 bg-gradient-to-b from-sky-950/50 to-teal-800/50 border-gray-400/30 rounded-2xl hover:border-2 hover:border-sky-400/40 group'>
+                <div className='overflow-hidden relative rounded-xl'>
+                   <img src={Ecommerce} alt="Ecommerce website image" className='w-150 rounded-lg transform transition-transform duration-300 group-hover:scale-105'/>
+                </div>
                 <p className='text-2xl text-gray-200 py-3 font-medium'>MaxBuy</p>
                 <p className='text-justify text-gray-300'>A full stack e-commerce web app built with the MERN stack, Tailwind CSS, and PayPal API. Features include product browsing, filtering, variant selection, cart management, and order placement. Supports Cash on Delivery and PayPal payments.</p>
                 <div className='flex justify-between text-white pt-5'> 
@@ -71,8 +79,10 @@ const Projects = () => {
             </div>
         </div>
         <div className='flex flex-row gap-5'>
-            <div className='w-1/2 border p-6 bg-gradient-to-b from-sky-950/50 to-teal-800/50 rounded-2xl'>
-                <img src={Univesity} alt="University website image" className='w-150 rounded-lg'/>
+            <div className='w-1/2 border-2 p-6 bg-gradient-to-b from-sky-950/50 to-teal-800/50 border-gray-400/30 rounded-2xl hover:border-2 hover:border-sky-400/40 group'>
+                <div className='overflow-hidden relative rounded-xl'>
+                    <img src={Univesity} alt="University website image" className='w-150 rounded-lg transform transition-transform duration-300 group-hover:scale-105'/>
+                </div>
                 <p className='text-2xl text-gray-200 py-3 font-medium'>University</p>
                 <p className='text-justify text-gray-300'>An online course platform built with the MERN stack, Tailwind CSS, and Stripe for secure payments. Users can enroll in courses or register as educators. Includes dashboards for educators to manage courses and track earnings.</p>
                 <div className='flex justify-between text-white pt-5'> 
