@@ -3,7 +3,8 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
-import Projects from './components/Projects'
+import Certificates from './components/Certificates'
+
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
         <Home/>
         <About/>
         <Portfolio/>
-        <Projects/>
+        <Certificates/>
     </div>
   )
 }
