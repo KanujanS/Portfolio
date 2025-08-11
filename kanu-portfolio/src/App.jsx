@@ -4,6 +4,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
 import TechStacks from './components/TechStacks'
+import Contact from './components/Contact'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <About/>
         <Portfolio/>
         <TechStacks/>
+        <Contact/>
     </div>
   )
 }
