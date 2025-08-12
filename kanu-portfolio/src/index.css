@@ -50,7 +50,7 @@ li .active-link + .link-hr {
   margin-top: 4px;
 }
 .gradient-text-heading {
-  background: linear-gradient(to right, #4986a9, #2386d6, #309ebc);
+  background: linear-gradient(to right, #00c8ff, #0178ab );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
