@@ -25,25 +25,25 @@ const Home = () => {
             </p>
             <p className='text-lg text-gray-400 py-6'>Enthusiastic and dedicated aspiring Software Engineer with a solid understanding of full-stack development.</p>
             <div className='text-white text-sm space-x-5 py-2'>
-                <button className='border border-gray-500 px-5 py-2 rounded-3xl bg-gray-100/10'>MongoDB</button>
-                <button className='border border-gray-500 px-5 py-2 rounded-3xl bg-gray-100/10'>Express.js</button>
-                <button className='border border-gray-500 px-5 py-2 rounded-3xl bg-gray-100/10'>React.js</button>
-                <button className='border border-gray-500 px-5 py-2 rounded-3xl bg-gray-100/10'>Node.js</button>
+                <button className='border border-gray-500 px-5 py-2 rounded-3xl bg-gray-100/10 hover:bg-gray-500/40 cursor-text'>MongoDB</button>
+                <button className='border border-gray-500 px-5 py-2 rounded-3xl bg-gray-100/10 hover:bg-gray-500/40 cursor-text'>Express.js</button>
+                <button className='border border-gray-500 px-5 py-2 rounded-3xl bg-gray-100/10 hover:bg-gray-500/40 cursor-text'>React.js</button>
+                <button className='border border-gray-500 px-5 py-2 rounded-3xl bg-gray-100/10 hover:bg-gray-500/40 cursor-text'>Node.js</button>
             </div>
             <div className='flex gap-10 py-8 text-white text-sm'>
-                <div className='w-45 justify-center gap-2 rounded-xl flex items-center px-7 py-3 bg-black/40' style={{ boxShadow: '0px 0px 20px rgba(14, 165, 233, 0.7)' }}>
+                <div className='w-45 justify-center gap-2 rounded-xl flex items-center px-7 py-3 bg-black/40 cursor-pointer transition-all duration-300 shadow-[0px_0px_20px_rgba(14,165,233,0.7)] hover:shadow-[0px_0px_30px_rgba(14,165,233,0.9)] hover:bg-sky-400/10 group' onClick={()=> document.getElementById('projects').scrollIntoView({behavior: 'smooth'})} >
                     <p>Projects</p>
-                    <BsBoxArrowUpRight />
+                    <BsBoxArrowUpRight className=' transition-transform duration-300 group-hover:rotate-45'/>
                 </div>
-                <div className='w-45 flex items-center justify-center gap-2 rounded-xl px-7 py-3 bg-black/40' style={{ boxShadow: '0px 0px 20px rgba(14, 165, 233, 0.7)' }}>
+                <div className='w-45 flex items-center justify-center gap-2 rounded-xl px-7 py-3 bg-black/40 cursor-pointer transition-all duration-300 shadow-[0px_0px_20px_rgba(14,165,233,0.7)] hover:shadow-[0px_0px_30px_rgba(14,165,233,0.9)] hover:bg-sky-400/10 group' onClick={()=> document.getElementById('contact').scrollIntoView({behavior:'smooth'})}>
                     <p>Contact Me</p>
-                    <MdMailOutline className='text-lg'/>
+                    <MdMailOutline className='text-lg transition-transform duration-300 group-hover:translate-x-1'/>
                 </div>
             </div>
             <div className='flex text-2xl py-3 text-gray-100/60 gap-10'>
-                <a href="https://www.linkedin.com/in/kanujan-subakaran-156339292/" target='_blank' className='border p-2 rounded-xl' style={{ boxShadow: '0px 0px 20px rgba(14, 165, 233, 0.7)' }}><FiGithub /></a>
-                <a href="https://github.com/KanujanS" target='_blank' className='border p-2 rounded-xl' style={{ boxShadow: '0px 0px 20px rgba(14, 165, 233, 0.7)' }}><FiLinkedin /></a>
-                <a href="https://medium.com/@kanujansk" target='_blank' className='border p-2 rounded-xl' style={{ boxShadow: '0px 0px 20px rgba(14, 165, 233, 0.7)' }}><FaMediumM /></a>
+                <a href="https://www.linkedin.com/in/kanujan-subakaran-156339292/" target='_blank' className='border p-2 rounded-xl shadow-[0px_0px_20px_rgba(14,165,233,0.7)] hover:shadow-[0px_0px_30px_rgba(14,165,233,0.9)]' ><FiGithub /></a>
+                <a href="https://github.com/KanujanS" target='_blank' className='border p-2 rounded-xl shadow-[0px_0px_20px_rgba(14,165,233,0.7)] hover:shadow-[0px_0px_30px_rgba(14,165,233,0.9)]' ><FiLinkedin /></a>
+                <a href="https://medium.com/@kanujansk" target='_blank' className='border p-2 rounded-xl shadow-[0px_0px_20px_rgba(14,165,233,0.7)] hover:shadow-[0px_0px_30px_rgba(14,165,233,0.9)]' ><FaMediumM /></a>
             </div>
         </div>
         <div>

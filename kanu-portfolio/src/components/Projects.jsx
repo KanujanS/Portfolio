@@ -9,7 +9,7 @@ import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 
 const Projects = () => {
   return (
-    <div className='grid grid-cols-2 gap-5 px-5'>
+    <div className='grid grid-cols-2 gap-5 px-5' id='projects'>
             <div className='border-2 p-6 bg-gradient-to-b from-sky-950/50 to-teal-800/50 border-gray-400/30 rounded-2xl hover:border-2 hover:border-sky-400/40 group'>
                 <div className='overflow-hidden relative rounded-xl'>
                    <img src={FoodDelivery} alt="Food Delivery website image" className='rounded-lg transform transition-transform duration-300 group-hover:scale-105'/>
