@@ -153,7 +153,7 @@ const Contact = () => {
                         <BiMessage className='text-2xl group-focus-within:text-sky-300 mt-1'/>
                         <textarea type="text" placeholder='Your Message' name='message' className='outline-none w-full pb-25 text-white resize-none' required/>
                     </div>
-                    <button className='flex items-center gap-2 w-full justify-center py-4 bg-gradient-to-r from-sky-600 to-teal-600  text-white rounded-2xl'>
+                    <button className='flex items-center cursor-pointer gap-2 w-full justify-center py-4 bg-gradient-to-r from-sky-600 to-teal-600  text-white rounded-2xl'>
                         <p className='font-semibold text-lg'>Send Message</p>
                         <LuSend className='text-2xl'/>
                     </button>
