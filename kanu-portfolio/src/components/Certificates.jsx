@@ -13,7 +13,7 @@ const Certificates = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-3 gap-5" id="certificates">
         {[Certificate1, Certificate2, Certificate3, Certificate4].map((img, index) => (
           <div key={index} className="relative border-8 border-sky-950/70 rounded-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 cursor-pointer" onClick={() => openPopup(img)}>
             <img src={img} alt={`Certificate ${index + 1}`} className="w-full h-full object-cover" />
