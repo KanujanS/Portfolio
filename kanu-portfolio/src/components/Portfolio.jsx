@@ -23,7 +23,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className='py-20 flex flex-col' id='portfolio'>
+    <div className='pt-20 flex flex-col' id='portfolio'>
       <div className='flex flex-col justify-center items-center text-center gap-2'>
         <p className='text-5xl font-bold gradient-text-fallback'>Portfolio Showcase</p>
         <p className='text-md font-light text-gray-400 px-50'>
