@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='pt-20' id='contact'>
+    <div className='pt-10' id='contact'>
         <div className='text-center'>
             <p className='text-5xl font-bold gradient-text-fallback'>Contact Me</p>
             <p className='font-medium text-gray-400 py-1'>Got a question? Send me a message, and I'll get back to you soon.</p>

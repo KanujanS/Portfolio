@@ -52,7 +52,7 @@ const About = () => {
             </div>
         </div>
         <div className='w-full flex flex-row gap-7 text-white my-8'>
-            <div className='w-full border-[0.1px] border-gray-400/50 p-5 pb-3 bg-sky-800/30 rounded-2xl text-start space-y-4'>
+            <div className='w-full border-[0.1px] border-gray-400/50 p-5 pb-3 bg-sky-800/30 rounded-2xl text-start space-y-4 transition-transform duration-300 hover:scale-105 hover:bg-gradient-to-br hover:from-teal-400/20 hover:via-sky-400/10 hover:to-sky-400/30'>
                 <div className='flex justify-between items-center'>
                     <div className='text-4xl border p-3 rounded-full inline-flex items-center justify-center'>
                         <BiExpandHorizontal />
@@ -65,7 +65,7 @@ const About = () => {
                     <FiArrowDownRight className='text-2xl'/>
                 </div>
             </div>
-            <div className='w-full border-[0.1px] border-gray-400/50 p-5 pb-3 bg-sky-800/30 rounded-2xl text-start space-y-4'>
+            <div className='w-full border-[0.1px] border-gray-400/50 p-5 pb-3 bg-sky-800/30 rounded-2xl text-start space-y-4 transition-transform duration-300 hover:scale-105 hover:bg-gradient-to-tr hover:from-teal-400/20 hover:via-sky-400/10 hover:to-sky-400/30'>
                 <div className='flex justify-between items-center'>
                     <div className='text-4xl border p-3 rounded-full inline-flex items-center justify-center'>
                         <LiaCertificateSolid />
@@ -78,7 +78,7 @@ const About = () => {
                     <FiArrowDownRight className='text-2xl'/>
                 </div>
             </div>
-            <div className='w-full border-[0.1px] border-gray-400/50 p-5 pb-3 bg-sky-800/30 rounded-2xl text-start space-y-4'>
+            <div className='w-full border-[0.1px] border-gray-400/50 p-5 pb-3 bg-sky-800/30 rounded-2xl text-start space-y-4 transition-transform duration-300 hover:scale-105 hover:bg-gradient-to-bl hover:from-teal-400/20 hover:via-sky-400/10 hover:to-sky-400/30'>
                 <div className='flex justify-between'>
                     <div className='text-4xl border p-3 rounded-full inline-flex items-center justify-center'>
                         <TbWorldCode />
