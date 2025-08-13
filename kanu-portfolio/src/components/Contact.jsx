@@ -12,6 +12,31 @@ import { FaYoutube } from "react-icons/fa";
 import { RiTiktokLine } from "react-icons/ri";
 
 const Contact = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "ccbc912d-a0aa-4448-8bc1-e7e6349e3b10");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Message Sent Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className='pt-20' id='contact'>
         <div className='text-center'>
@@ -55,7 +80,7 @@ const Contact = () => {
                 <div className='border border-gray-400/50 rounded-2xl p-5 mt-5 group bg-gray-500/10  hover:bg-gradient-to-r hover:from-blue-800/30 hover:to-sky-400/10 hover:bg-opacity-20'>
                     <a href="https://www.facebook.com/share/1UaGcUQyhQ/?mibextid=wwXIfr" className='flex justify-between items-center' target='_blank'>
                       <div className='flex'>
-                        <div className='bg-[#2323ea7f] p-3 text-3xl rounded-lg backdrop-blur-md transition-transform duration-300 group-hover:scale-115'>
+                        <div className='bg-[#0000ff7f] p-3 text-3xl rounded-lg backdrop-blur-md transition-transform duration-300 group-hover:scale-115'>
                             <FaFacebookF className='text-white'/>
                         </div>
                         <div className='px-3'>
@@ -110,29 +135,30 @@ const Contact = () => {
                     </a>
                 </div>
             </div>
-            <div className='p-10 rounded-2xl bg-gradient-to-b from-sky-400/10 via-teal-400/10 to-sky-700/10 backdrop-blur-md'>
+            <div className='pt-10 px-10 rounded-2xl bg-gradient-to-b from-sky-400/10 via-teal-400/10 to-sky-700/10 backdrop-blur-md'>
                 <div className='text-center'>
                     <p className='text-4xl font-bold gradient-text-heading '>- Get In Touch -</p>
                     <p className=' text-gray-400 py-1'>Have something to discuss? Send me a message and let's talk.</p>
                 </div>
-                <form className='pt-8 space-y-5'>
+                <form onSubmit={onSubmit} className='pt-8 pb-3 space-y-5'>
                     <div className='flex text-gray-400 text-xl items-center w-full px-5 py-3 border border-gray-400/50 gap-2 rounded-2xl bg-sky-950/50 group focus-within:border-sky-300'>
                         <RxPerson className='text-2xl group-focus-within:text-sky-300'/>
-                        <input type="text" placeholder='Your Name' className='outline-none w-full text-white' required/>
+                        <input type="text" placeholder='Your Name' name='name' className='outline-none w-full text-white' required/>
                     </div>
                     <div className='flex text-gray-400 text-xl items-center w-full px-5 py-3 border border-gray-400/50 gap-2 rounded-2xl bg-sky-950/50 group focus-within:border-sky-300'>
                         <MdMailOutline className='text-2xl group-focus-within:text-sky-300'/>
-                        <input type="email" placeholder='Your Email' className='outline-none w-full text-white' required/>
+                        <input type="email" placeholder='Your Email' name='email' className='outline-none w-full text-white' required/>
                     </div>
                     <div className='flex text-gray-400 text-xl w-full px-5 py-3 border border-gray-400/50 gap-2 rounded-2xl bg-sky-950/50 group focus-within:border-sky-300'>
                         <BiMessage className='text-2xl group-focus-within:text-sky-300 mt-1'/>
-                        <textarea type="text" placeholder='Your Message' className='outline-none w-full pb-25 text-white resize-none' required/>
+                        <textarea type="text" placeholder='Your Message' name='message' className='outline-none w-full pb-25 text-white resize-none' required/>
                     </div>
                     <button className='flex items-center gap-2 w-full justify-center py-4 bg-gradient-to-r from-sky-600 to-teal-600  text-white rounded-2xl'>
                         <p className='font-semibold text-lg'>Send Message</p>
                         <LuSend className='text-2xl'/>
                     </button>
                 </form>
+                <span className='text-gray-400 text-sm'>{result}</span>
             </div>
         </div>
     </div>
