@@ -9,10 +9,11 @@ import { SiGithub } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
+import { RiTiktokLine } from "react-icons/ri";
 
 const Contact = () => {
   return (
-    <div className='' id='contact'>
+    <div className='pt-20' id='contact'>
         <div className='text-center'>
             <p className='text-5xl font-bold gradient-text-fallback'>Contact Me</p>
             <p className='font-medium text-gray-400 py-1'>Got a question? Send me a message, and I'll get back to you soon.</p>
@@ -37,20 +38,6 @@ const Contact = () => {
                     </a>
                 </div>
                 <div className='grid grid-cols-2 gap-5'>
-                <div className='border border-gray-400/50 rounded-2xl p-5 mt-5 group bg-gray-500/10  hover:bg-gradient-to-r hover:from-black/20 hover:to-gray-400/10 hover:bg-opacity-20'>
-                    <a href="https://github.com/KanujanS" className='flex justify-between items-center' target='_blank'>
-                      <div className='flex'>
-                        <div className='bg-gray-400/20 p-3 text-3xl rounded-lg backdrop-blur-md transition-transform duration-300 group-hover:scale-115'>
-                            <SiGithub className='text-white'/>
-                        </div>
-                        <div className='px-3'>
-                            <p className='text-lg font-medium text-white'>Github</p>
-                            <p className=' text-gray-400'>@KanujanS</p>
-                        </div>
-                      </div>
-                      <BsBoxArrowUpRight className='text-white text-xl opacity-0 translate-x-2 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0'/>
-                    </a>
-                </div>
                 <div className='border border-gray-400/50 rounded-2xl p-5 mt-5 group bg-gray-500/10  hover:bg-gradient-to-r hover:from-purple-400/10 hover:via-red-400/10 hover:to-yellow-700/30 hover:bg-opacity-20'>
                     <a href="https://www.instagram.com/kanujan_sk?igsh=a2xoMWhjMHJrbm5v&utm_source=qr" className='flex justify-between items-center' target='_blank'>
                       <div className='flex'>
@@ -65,15 +52,29 @@ const Contact = () => {
                       <BsBoxArrowUpRight className='text-white text-xl opacity-0 translate-x-2 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0'/>
                     </a>
                 </div>
-                <div className='border border-gray-400/50 rounded-2xl p-5 group bg-gray-500/10  hover:bg-gradient-to-r hover:from-blue-800/30 hover:to-sky-400/10 hover:bg-opacity-20'>
+                <div className='border border-gray-400/50 rounded-2xl p-5 mt-5 group bg-gray-500/10  hover:bg-gradient-to-r hover:from-blue-800/30 hover:to-sky-400/10 hover:bg-opacity-20'>
                     <a href="https://www.facebook.com/share/1UaGcUQyhQ/?mibextid=wwXIfr" className='flex justify-between items-center' target='_blank'>
                       <div className='flex'>
                         <div className='bg-[#2323ea7f] p-3 text-3xl rounded-lg backdrop-blur-md transition-transform duration-300 group-hover:scale-115'>
-                            <FaFacebookF className='text-[#0051ff]'/>
+                            <FaFacebookF className='text-white'/>
                         </div>
                         <div className='px-3'>
                             <p className='text-lg font-medium text-white'>Facebook</p>
                             <p className=' text-gray-400'>@Kanujan SK</p>
+                        </div>
+                      </div>
+                      <BsBoxArrowUpRight className='text-white text-xl opacity-0 translate-x-2 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0'/>
+                    </a>
+                </div>
+                <div className='border border-gray-400/50 rounded-2xl p-5 group bg-gray-500/10  hover:bg-gradient-to-r hover:from-black/20 hover:via-teal-400/20 hover:to-red-400/20 hover:bg-opacity-20'>
+                    <a href="https://www.tiktok.com/@kanujan_sk?_t=ZS-8ypoEBy4jq4&_r=1" className='flex justify-between items-center' target='_blank'>
+                      <div className='flex'>
+                        <div className='bg-black/50 p-3 text-3xl rounded-lg backdrop-blur-md transition-transform duration-300 group-hover:scale-115'>
+                            <RiTiktokLine className='text-white'/>
+                        </div>
+                        <div className='px-3'>
+                            <p className='text-lg font-medium text-white'>Tiktok</p>
+                            <p className=' text-gray-400'>@kanujan_sk</p>
                         </div>
                       </div>
                       <BsBoxArrowUpRight className='text-white text-xl opacity-0 translate-x-2 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0'/>
@@ -94,10 +95,24 @@ const Contact = () => {
                     </a>
                 </div>
                 </div>
+                <div className='border border-gray-400/50 rounded-2xl p-5 mt-5 group bg-gray-500/10  hover:bg-gradient-to-r hover:from-black/20 hover:to-gray-400/10 hover:bg-opacity-20'>
+                    <a href="https://github.com/KanujanS" className='flex justify-between items-center' target='_blank'>
+                      <div className='flex'>
+                        <div className='bg-gray-400/20 p-3 text-3xl rounded-lg backdrop-blur-md transition-transform duration-300 group-hover:scale-115'>
+                            <SiGithub className='text-white'/>
+                        </div>
+                        <div className='px-3'>
+                            <p className='text-xl font-semibold text-white'>Github</p>
+                            <p className=' text-gray-400'>@KanujanS</p>
+                        </div>
+                      </div>
+                      <BsBoxArrowUpRight className='text-white text-xl opacity-0 translate-x-2 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-0'/>
+                    </a>
+                </div>
             </div>
             <div className='p-10 rounded-2xl bg-gradient-to-b from-sky-400/10 via-teal-400/10 to-sky-700/10 backdrop-blur-md'>
                 <div className='text-center'>
-                    <p className='text-4xl font-bold gradient-text-heading '>Get In Touch</p>
+                    <p className='text-4xl font-bold gradient-text-heading '>- Get In Touch -</p>
                     <p className=' text-gray-400 py-1'>Have something to discuss? Send me a message and let's talk.</p>
                 </div>
                 <form className='pt-8 space-y-5'>
