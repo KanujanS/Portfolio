@@ -82,7 +82,7 @@ const Projects = () => {
                 <p className='text-justify text-gray-300'>An online course platform built with the MERN stack, Tailwind CSS, and Stripe for secure payments. Users can enroll in courses or register as educators. Includes dashboards for educators to manage courses and track earnings.</p>
                 <div className='flex justify-between text-white pt-5'> 
                     <div className='flex items-center gap-2 cursor-pointer text-sky-500 hover:text-sky-300 font-medium'>
-                        <button className='cursor-pointer'>Live Demo</button>
+                        <button className='cursor-pointer'><a href="https://educity-vvvb.vercel.app/" target='_blank'>Live Demo</a></button>
                         <HiArrowTopRightOnSquare className='text-xl'/>
                     </div>
                     <div className='border border-sky-950 bg-gray-400/20 hover:bg-gray-200/20 px-5 py-2 rounded-xl cursor-pointer'>
