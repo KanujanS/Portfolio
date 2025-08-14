@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
     <div className='fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-xl  px-30 py-5'>
       <div className='flex justify-between items-center'>
-        <p className='font-bold text-2xl bg-gradient-to-r from-sky-400 via-sky-600 to-sky-700 bg-clip-text text-transparent cursor-pointer'>KanujanSK</p>
+        <Link to='home' smooth={true} duration={500}>
+           <p className='font-bold text-2xl bg-gradient-to-r from-sky-400 via-sky-600 to-sky-700 bg-clip-text text-transparent cursor-pointer'>KanujanSK</p>
+        </Link>
         <div >
             <ul className='flex gap-10 text-white font-medium text-md'>
                 <li className=' cursor-pointer'>
