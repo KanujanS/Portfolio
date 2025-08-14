@@ -5,7 +5,15 @@
     font-family: Poppins;
 }
 
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overscroll-behavior: none;
+}
+
 body {
+  overflow-x: hidden;
   background: linear-gradient(to right, #0b192e, #060514);
 }
 
