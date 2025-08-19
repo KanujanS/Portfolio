@@ -41,8 +41,8 @@ const Home = () => {
                 </div>
             </div>
             <div className='flex justify-center sm:justify-start text-2xl py-3 text-gray-100/60 gap-10'>
-                <a href="https://www.linkedin.com/in/kanujan-subakaran-156339292/" target='_blank' className='border p-2 rounded-xl shadow-[0px_0px_20px_rgba(14,165,233,0.7)] hover:shadow-[0px_0px_30px_rgba(14,165,233,0.9)]' ><FiGithub /></a>
-                <a href="https://github.com/KanujanS" target='_blank' className='border p-2 rounded-xl shadow-[0px_0px_20px_rgba(14,165,233,0.7)] hover:shadow-[0px_0px_30px_rgba(14,165,233,0.9)]' ><FiLinkedin /></a>
+                <a href="https://github.com/KanujanS" target='_blank' className='border p-2 rounded-xl shadow-[0px_0px_20px_rgba(14,165,233,0.7)] hover:shadow-[0px_0px_30px_rgba(14,165,233,0.9)]' ><FiGithub /></a>
+                <a href="https://www.linkedin.com/in/kanujan-subakaran-156339292/" target='_blank' className='border p-2 rounded-xl shadow-[0px_0px_20px_rgba(14,165,233,0.7)] hover:shadow-[0px_0px_30px_rgba(14,165,233,0.9)]' ><FiLinkedin /></a>
                 <a href="https://medium.com/@kanujansk" target='_blank' className='border p-2 rounded-xl shadow-[0px_0px_20px_rgba(14,165,233,0.7)] hover:shadow-[0px_0px_30px_rgba(14,165,233,0.9)]' ><FaMediumM /></a>
             </div>
         </div>
