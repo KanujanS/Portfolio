@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <div>
-      <div className="px-25 m-5">
+      <div className="px-5 m-5 md:px-25">
         <div className="bg-grid-full"></div>
         <Navbar />
         <Home />
