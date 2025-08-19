@@ -15,7 +15,7 @@ const Home = () => {
         deleteSpeed: 80,
     })
   return (
-    <div className='flex pt-30' id='home'>
+    <div className='md:flex pt-30' id='home'>
         <div>
             <p className='font-medium text-xl bg-gradient-to-r from-sky-400 via-sky-600 to-sky-800 bg-clip-text text-transparent'>I'm Kanujan Subakaran,</p>
             <p className='text-white font-bold text-7xl py-8' style={{ textShadow: '0px 0px 90px #0ea5e9' }}>Software <br /> <span className='bg-gradient-to-r from-sky-400 via-sky-600 to-sky-800 bg-clip-text text-transparent' >Engineer</span></p>
@@ -47,7 +47,7 @@ const Home = () => {
             </div>
         </div>
         <div>
-            <img src={PROFILE} alt="Profile Image" className='w-210 ml-20 mt-[-25px]'/>
+            <img src={PROFILE} alt="Profile Image" className='w-90 md:w-210 ml-20 md:mt-[-25px]'/>
         </div>
     </div>
   )
