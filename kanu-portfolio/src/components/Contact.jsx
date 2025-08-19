@@ -137,7 +137,7 @@ const Contact = () => {
             </div>
             <div className='pt-10 px-5 md:px-10 rounded-2xl bg-gradient-to-b from-sky-400/10 via-teal-400/10 to-sky-700/10 backdrop-blur-md'>
                 <div className='text-center'>
-                    <p className='text-2xl md:text-4xl font-bold gradient-text-heading '>- Get In Touch -</p>
+                    <p className='text-3xl md:text-4xl font-bold gradient-text-heading '>- Get In Touch -</p>
                     <p className='text-sm md:text-base text-gray-400 py-1'>Have something to discuss? Send me a message and let's talk.</p>
                 </div>
                 <form onSubmit={onSubmit} className='pt-8 pb-3 space-y-5'>
