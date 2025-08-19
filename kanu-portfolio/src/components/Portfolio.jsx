@@ -26,7 +26,7 @@ const Portfolio = () => {
     <div className='pt-20 flex flex-col' id='portfolio'>
       <div className='flex flex-col justify-center items-center text-center gap-2'>
         <p className='text-3xl md:text-5xl font-bold gradient-text-fallback'>Portfolio Showcase</p>
-        <p className='md:text-md font-light text-gray-400 md:px-50'>
+        <p className='font-light text-gray-400 md:px-50 '>
           Explore my journey through projects, certifications, and technical expertise. 
           Each section represents a milestone in my continuous learning path.
         </p>
