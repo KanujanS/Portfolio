@@ -2,7 +2,7 @@ import React from 'react'
 
 const TechStacks = () => {
   return (
-    <div className='grid grid-cols-7 gap-7 px-6'>
+    <div className='grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-5 md:gap-7 px-6 text-sm lg:text-base'>
         <div className='bg-sky-950/50 px-10 py-5 rounded-2xl transition-transform duration-300 hover:scale-105 group'>
             <div className='relative'>
               <img src="/HTML5.svg" alt="HTML Icon" className='relative z-10'/>
@@ -36,7 +36,7 @@ const TechStacks = () => {
               <span className='absolute inset-0 -z-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-lg' style={{ background:'linear-gradient(to right, #38bdf8, #0369a1, #14b8a6)' }}></span>
             </div>
             <div className='flex justify-center'>
-                <p className='text-white pt-2 text-md font-medium'>React JS</p>
+                <p className='text-white pt-2 text-md font-medium whitespace-nowrap'>React JS</p>
             </div>
         </div>
         <div className='bg-sky-950/50 px-10 py-5 rounded-2xl transition-transform duration-300 hover:scale-105 group'>
