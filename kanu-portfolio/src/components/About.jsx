@@ -27,7 +27,7 @@ const About = () => {
                 <p className='text-3xl md:text-5xl font-bold my-5'>Kanujan Subakaran</p>
                 <p className='text-gray-400 md:text-lg text-justify'>Enthusiastic and dedicated aspiring Software Engineer with a solid understanding of full-stack development, particularly in the MERN stack <span className='font-medium text-gray-300'>(MongoDB, Express.js, React.js, Node.js)</span>. Passionate about building responsive web applications and continuously learning to stay updated with the latest software engineering practices.</p>
                 <div className='my-6 text-center md:w-50'>
-                    <a href="https://drive.google.com/file/d/1LYqnEw0iqlBnbpZ4jvX7YNjOF28nlDmW/view?usp=drive_link" target='_blank'>
+                    <a href="https://drive.google.com/file/d/1m8yu11xsf1ETwkxxshcMv2GUj2szlRQd/view?usp=sharing" target='_blank'>
                     <p className='flex items-center justify-center gap-2 bg-gradient-to-r from-sky-500 via-sky-700 to-sky-800 hover:bg-gradient-to-r hover:from-sky-600 hover:via-sky-900 px-5 py-3 font-medium rounded-xl'><TbFileCv className='text-2xl'/> Download CV</p>
                     </a>
                 </div>
