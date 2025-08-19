@@ -25,21 +25,21 @@ const Portfolio = () => {
   return (
     <div className='pt-20 flex flex-col' id='portfolio'>
       <div className='flex flex-col justify-center items-center text-center gap-2'>
-        <p className='text-5xl font-bold gradient-text-fallback'>Portfolio Showcase</p>
-        <p className='text-md font-light text-gray-400 px-50'>
+        <p className='text-3xl md:text-5xl font-bold gradient-text-fallback'>Portfolio Showcase</p>
+        <p className='md:text-md font-light text-gray-400 md:px-50'>
           Explore my journey through projects, certifications, and technical expertise. 
           Each section represents a milestone in my continuous learning path.
         </p>
       </div>
 
-      <div className='w-full border flex py-2 px-5 mt-10 text-white text-xl font-medium gap-5 rounded-2xl border-gray-400/30 gradient-box-bg'>
+      <div className='w-full border flex py-2 px-2 md:px-5 mt-10 text-white  font-medium gap-5 rounded-2xl border-gray-400/30 gradient-box-bg'>
         <div 
           className={`w-full flex flex-col py-5 items-center justify-center rounded-xl backdrop-blur-md cursor-pointer 
           ${activeSection === 'projects' ? 'bg-gradient-to-r from-teal-400/10 to-sky-400/10' : 'hover:bg-gradient-to-r hover:from-teal-400/10 hover:to-sky-400/10'}`}
           onClick={() => setActiveSection('projects')}
         >
-          <IoIosCode className='text-3xl'/>
-          <p>Projects</p>
+          <IoIosCode className='text-2xl md:text-3xl'/>
+          <p className='text-sm md:text-xl'>Projects</p>
         </div>
 
         <div 
@@ -47,8 +47,8 @@ const Portfolio = () => {
           ${activeSection === 'certificates' ? 'bg-gradient-to-r from-teal-400/10 to-sky-400/10' : 'hover:bg-gradient-to-r hover:from-teal-400/10 hover:to-sky-400/10'}`}
           onClick={() => setActiveSection('certificates')}
         >
-          <LiaCertificateSolid className='text-3xl'/>
-          <p>Certificates</p>
+          <LiaCertificateSolid className='text-2xl md:text-3xl'/>
+          <p className='text-sm md:text-xl'>Certificates</p>
         </div>
 
         <div 
@@ -56,8 +56,8 @@ const Portfolio = () => {
           ${activeSection === 'techStacks' ? 'bg-gradient-to-r from-teal-400/10 to-sky-400/10' : 'hover:bg-gradient-to-r hover:from-teal-400/10 hover:to-sky-400/10'}`}
           onClick={() => setActiveSection('techStacks')}
         >
-          <BsBoxes className='text-3xl'/>
-          <p>Tech Stacks</p>
+          <BsBoxes className='text-lg md:text-3xl'/>
+          <p className='text-sm md:text-xl'>Tech Stacks</p>
         </div>
       </div>
 
