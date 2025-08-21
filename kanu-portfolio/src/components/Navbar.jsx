@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {Link} from 'react-scroll'
 
 
 const Navbar = () => {
+  const [scrolled,setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = ()=> {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [])
+  
   return (
-    <div className='fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-xl  px-7 py-5 md:px-30'>
+    <div className={`fixed top-0 left-0 w-full z-50 px-7 py-5 md:px-30 ${scrolled ? 'bg-sky-950/20 backdrop-blur-xl shadow-md' : 'bg-transparent'}`}>
       <div className='flex justify-between items-center'>
         <Link to='home' smooth={true} duration={500}>
            <p className='font-bold text-2xl bg-gradient-to-r from-sky-400 via-sky-600 to-sky-700 bg-clip-text text-transparent cursor-pointer'>KanujanSK</p>
