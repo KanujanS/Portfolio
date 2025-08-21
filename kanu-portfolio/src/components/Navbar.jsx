@@ -28,19 +28,19 @@ const Navbar = () => {
         <div >
             <ul className='hidden md:flex gap-10 text-white font-medium text-md'>
                 <li className=' cursor-pointer'>
-                  <Link to='home' smooth={true} duration={500} spy={true} offset={-100} activeClass="active-link">Home</Link>
+                  <Link to='home' smooth={true} duration={500} spy={true} activeClass="active-link">Home</Link>
                   <hr className='mt-1 border-none h-[1.5px] bg-white justify-center link-hr'/>
                 </li>
                 <li className=' cursor-pointer'>
-                  <Link to='about' smooth={true} duration={500} spy={true} offset={-100} activeClass="active-link">About</Link>
+                  <Link to='about' smooth={true} duration={500} spy={true} activeClass="active-link">About</Link>
                   <hr className='mt-1 border-none h-[1.5px] bg-white justify-center link-hr'/>
                 </li>
                 <li className=' cursor-pointer'>
-                  <Link to='portfolio' smooth={true} duration={500} spy={true} offset={-100} activeClass="active-link">Portfolio</Link>
+                  <Link to='portfolio' smooth={true} duration={500} spy={true} activeClass="active-link">Portfolio</Link>
                   <hr className='mt-1 border-none h-[1.5px] bg-white justify-center link-hr'/>
                 </li>
                 <li className='cursor-pointer'>
-                  <Link to='contact' smooth={true} duration={500} spy={true} offset={-100} activeClass="active-link">Contact</Link>
+                  <Link to='contact' smooth={true} duration={500} spy={true} activeClass="active-link">Contact</Link>
                   <hr className='mt-1 border-none h-[1.5px] bg-white justify-center link-hr'/>
                 </li>
             </ul>
@@ -50,7 +50,7 @@ const Navbar = () => {
       {menuOpen && (
           <div className='md:hidden mt-5 p-5 space-y-5 text-white font-medium text-lg'>
             {['home', 'about', 'portfolio', 'contact'].map((section)=>(
-              <Link key={section} to={section} smooth={true} duration={500} spy={true} offset={-100} activeClass='active-link' onClick={()=>setMenuOpen(false)} className='block cursor-pointer'>
+              <Link key={section} to={section} smooth={true} duration={500} spy={true} activeClass='active-link' onClick={()=>setMenuOpen(false)} className='block cursor-pointer'>
                 {section.charAt(0).toUpperCase()+section.slice(1)}
               </Link>
             ))}
